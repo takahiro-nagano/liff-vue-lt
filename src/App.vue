@@ -8,6 +8,7 @@
     <a href="https://developers.line.biz/ja/docs/liff/" target="_blank" rel="noreferrer">
       LIFF Documentation
     </a>
+    <p>hallo inspector</p>
   </div>
 </template>
 
@@ -25,6 +26,7 @@ export default {
   },
   mounted() {
     liff.use(new LIFFInspectorPlugin())
+    // liff.use(new LIFFInspectorPlugin({ origin: 'wss://darling-starburst-32a83d.netlify.app' }))
 
     liff
       .init({
@@ -32,6 +34,7 @@ export default {
       })
       .then(() => {
         this.message = "LIFF init succeeded.";
+        console.log("hallo inspector");
       })
       .catch((e) => {
         this.message = "LIFF init failed.";
