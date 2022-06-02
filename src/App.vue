@@ -19,6 +19,7 @@
       <button v-on:click="counter += 1">Add 1</button>
       <p>The button above has been clicked {{ counter }} times.</p>
     </div>
+    <button v-on:click="greet">クリック</button>
     <p>hallo inspector</p>
   </div>
 </template>
@@ -53,6 +54,15 @@ export default {
       });
   },
   methods: {
+    greet(event) {
+      // メソッド内の `this` は、 Vue インスタンスを参照します
+      alert('Hello!')
+      console.log("Hello");
+      // `event` は、ネイティブ DOM イベントです
+      // if (event) {
+      //   alert(event.target.tagName)
+      // }
+    }
     // openLoading(text) {
     //   if (!text) {
     //     this.loading = 'Loading'
