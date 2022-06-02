@@ -55,7 +55,6 @@ export default {
   },
   methods: {
     greet(event) {
-      // メソッド内の `this` は、 Vue インスタンスを参照します
       console.log(this.counter += 1)
       // alert('Hello!')
       // console.log("Hello");
@@ -64,16 +63,6 @@ export default {
       //   alert(event.target.tagName)
       // }
     }
-    // openLoading(text) {
-    //   if (!text) {
-    //     this.loading = 'Loading'
-    //   } else {
-    //     this.loading = text
-    //   }
-    // },
-    // closeLoading() {
-    //   this.loading = null
-    // },
   },
 };
 </script>
