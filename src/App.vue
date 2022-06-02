@@ -53,16 +53,16 @@ export default {
       });
   },
   methods: {
-    openLoading(text) {
-      if (!text) {
-        this.loading = 'Loading'
-      } else {
-        this.loading = text
-      }
-    },
-    closeLoading() {
-      this.loading = null
-    },
+    // openLoading(text) {
+    //   if (!text) {
+    //     this.loading = 'Loading'
+    //   } else {
+    //     this.loading = text
+    //   }
+    // },
+    // closeLoading() {
+    //   this.loading = null
+    // },
   },
 };
 </script>
