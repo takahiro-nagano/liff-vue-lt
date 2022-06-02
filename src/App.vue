@@ -5,9 +5,6 @@
     <p v-if="error">
       <code>{{ error }}</code>
     </p>
-    <a href="https://developers.line.biz/ja/docs/liff/" target="_blank" rel="noreferrer">
-      LIFF Documentation
-    </a>
     <div class="form">
       <div class="control">
         <!-- <input class="input" type="text" placeholder="お名前" v-model="formData.name"> -->
@@ -20,7 +17,10 @@
       <p>The button above has been clicked {{ counter }} times.</p>
     </div>
     <button v-on:click="greet">クリック</button>
-    <p>hallo inspector</p>
+    <p>hello inspector</p>
+    <a href="https://developers.line.biz/ja/docs/liff/" target="_blank" rel="noreferrer">
+      LIFF Documentation
+    </a>
   </div>
 </template>
 
