@@ -15,10 +15,10 @@
       <!-- <button class="button is-info is-fullwidth" @click="onSubmit()">送信する</button>
       <button class="button is-light is-fullwidth" @click="handleCancel()">キャンセル</button> -->
     </div>
-    <div id="example-1">
+    <!-- <div id="example-1">
       <button v-on:click="counter += 1">Add 1</button>
       <p>The button above has been clicked {{ counter }} times.</p>
-    </div>
+    </div> -->
     <p>hallo inspector</p>
   </div>
 </template>
