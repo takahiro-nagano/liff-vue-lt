@@ -27,7 +27,6 @@
 import liff from "@line/liff";
 import LIFFInspectorPlugin from "@line/liff-inspector";
 
-
 export default {
   data() {
     return {
@@ -52,7 +51,7 @@ export default {
         this.message = "LIFF init failed.";
         this.error = `${e}`;
       });
-  }
+  },
   methods: {
     openLoading(text) {
       if (!text) {
