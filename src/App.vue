@@ -56,8 +56,9 @@ export default {
   methods: {
     greet(event) {
       // メソッド内の `this` は、 Vue インスタンスを参照します
-      alert('Hello!')
-      console.log("Hello");
+      console.log(this.counter += 1)
+      // alert('Hello!')
+      // console.log("Hello");
       // `event` は、ネイティブ DOM イベントです
       // if (event) {
       //   alert(event.target.tagName)
