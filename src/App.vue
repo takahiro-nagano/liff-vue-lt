@@ -8,6 +8,17 @@
     <a href="https://developers.line.biz/ja/docs/liff/" target="_blank" rel="noreferrer">
       LIFF Documentation
     </a>
+    <div class="form">
+      <div class="control">
+        <input class="input" type="text" placeholder="お名前" v-model="formData.name">
+      </div>
+      <!-- <button class="button is-info is-fullwidth" @click="onSubmit()">送信する</button>
+      <button class="button is-light is-fullwidth" @click="handleCancel()">キャンセル</button> -->
+    </div>
+    <div id="example-1">
+      <button v-on:click="counter += 1">Add 1</button>
+      <p>The button above has been clicked {{ counter }} times.</p>
+    </div>
     <p>hallo inspector</p>
   </div>
 </template>
@@ -21,7 +32,8 @@ export default {
   data() {
     return {
       message: "",
-      error: ""
+      error: "",
+      counter: 0
     };
   },
   mounted() {
@@ -34,13 +46,25 @@ export default {
       })
       .then(() => {
         this.message = "LIFF init succeeded.";
-        console.log("hallo inspector");
+        console.log("hello inspector");
       })
       .catch((e) => {
         this.message = "LIFF init failed.";
         this.error = `${e}`;
       });
   }
+  methods: {
+    openLoading(text) {
+      if (!text) {
+        this.loading = 'Loading'
+      } else {
+        this.loading = text
+      }
+    },
+    closeLoading() {
+      this.loading = null
+    },
+  },
 };
 </script>
 
